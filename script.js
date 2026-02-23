@@ -3,16 +3,20 @@ document .getElementById("search-form").addEventListener("submit", function(even
 
     const searchname= document.getElementById("search").value.trim();
     console.log("Looking for game:", searchname);
-    const rating = document.getElementById("Platform").value.trim();
-    console.log("Minimum rating:", rating);
+    const platform = document.getElementById("Platform").value.trim();
+    console.log("Minimum platform:", platform);
     const genre = document.getElementById("genre").value.trim();
     console.log("Genre:", genre);   
+    const resultsamount = document.getElementById("resultsamount").value.trim();
+    console.log("Results Amount:", resultsamount);
+    
+
     fetch("/search", {
         method: "POST",
         headers: {
             "Content-Type": "application/json"
         },
-        body: JSON.stringify({ searchname, genre, platform: rating })
+        body: JSON.stringify({ searchname, genre, platform, resultsamount })
     })
         .then(response => response.json())
         .then(data => {

@@ -18,7 +18,7 @@
     <input type="text" id="search" name="search" placeholder="Search for a game...">
 
 
-    <button type="submit">Search</button>
+    
 
     <label for="genre">Select Genre:</label>
     <select name="Select Genre" id="genre" required>
@@ -30,21 +30,26 @@
       <option value="Indie">Indie</option>
     </select>
 
-    <label for="Platform">Select Minimum Rating:</label required>
-    <select name="Platform"  id="Platform">
-      <option value="1">Xbox</option>
-      <option value="2">PS5</option>
-      <option value="3">Mobile</option>
-      <option value="4">Ninento Switch</option>
+    <label for="Platform">Select Platform:</label>
+    <select name="Platform"  id="platform" required>
+      <option value="186">Xbox Series X/S</option>
+      <option value="187">PlayStation 5</option>
+      <option value="3">IOS</option>
+      <option value="4">PC</option>
+      <option value="21">Android</option>
+      <option value="7">Ninento Switch</option>
     </select>
+
+    <label for="Results Amount">Select Result Amount:</label>
+    <input Type="number" value="1" min="1" max="40" id="resultsamount" name="Result Amount" placeholder="Choose How Many Games (1-40)" required>
+
+    <button type="submit">Search</button>
+    
   </form>
 
-<div class="card">
-  <h2>Game Title</h2>
-  <p>Genre: Action</p>
-  <p>Rating: 4 Stars</p>
+
 <div id="results"></div>
-</div>
+
 
 </body>
 
