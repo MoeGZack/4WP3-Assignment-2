@@ -1,0 +1,24 @@
+{
+    "name": "assignment2",
+    "version": "1.0.0",
+    "main": "server.js",
+    "scripts": {
+        "test": "echo \"Error:Not specified\"&& exit 1",
+        "start": "node server.js"
+    },
+"engines": {
+"node": "7.6.0",
+"npm": "4.1.2"
+},
+
+"dependencies": {
+"express": "5.2.1",
+"nodemon":"3.1.14"
+
+},
+
+    "author": "",
+    "license": "ISC"
+
+
+}

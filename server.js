@@ -9,7 +9,7 @@ app.use(express.urlencoded({ extended: true }));
 
 
 app.get("/app", function(req,res) {
-  res.sendFile(`${__dirname}/app.html`);
+  res.sendFile(`${__dirname}/index.html`);
 });
 
 
