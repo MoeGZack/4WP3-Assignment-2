@@ -1,0 +1,18 @@
+This assignment allowed to gain insight with full stack developement and gave me the fundamental knowledge to be able to integrate API with web backend.
+
+It was interesting to see how I can create my own application for personal projects. Now when I need to pick out a video game I can use this applicaiton to pick something
+for me based off my preference for genres.
+
+Though I did recieve some challenges, wrapping my head around utilizing Get and fetch request and using API to present data was challenging.
+
+I was able to use class notes, W3schools and variety of youtube videos to help troubleshoot.
+
+Challenges I faced was handling asynchronus data and properly utilizing JSON data within the .then() block. Essentially I had data results API logic sit outside 
+my .then block which prevented me from being able to access my results
+(Commit ID:66f465d7de02b64a56859705ff2cdd8adcaaf4f0)
+
+
+Also I had issues with displaying data or getting data from API since i needed to follow API documentation 
+and ensure I had json string lowercase (commit id:[6d241adaefbd4ded6a72d442000f91a1ba672760][55744a78463cf9b1d05ccfd0d3d872bcfc763823])
+
+I was able to use Console logs and developer tools to help debug my issues along with references class notes and W3schools. And youtube
