@@ -1,8 +1,7 @@
 document .getElementById("search-form").addEventListener("submit", function(event) {
     event.preventDefault(); 
 
-    const searchname= document.getElementById("search").value.trim();
-    console.log("Looking for game:", searchname);
+   
     const platform = document.getElementById("platform").value.trim();
     console.log("Minimum platform:", platform);
     const genre = document.getElementById("genre").value.trim();
@@ -16,7 +15,7 @@ document .getElementById("search-form").addEventListener("submit", function(even
         headers: {
             "Content-Type": "application/json"
         },
-        body: JSON.stringify({ searchname, genre, platform, resultsamount })
+        body: JSON.stringify({ genre, platform, resultsamount })
     })
         .then(response => response.json())
         .then(data => {
