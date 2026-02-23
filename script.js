@@ -3,7 +3,7 @@ document .getElementById("search-form").addEventListener("submit", function(even
 
     const searchname= document.getElementById("search").value.trim();
     console.log("Looking for game:", searchname);
-    const platform = document.getElementById("Platform").value.trim();
+    const platform = document.getElementById("platform").value.trim();
     console.log("Minimum platform:", platform);
     const genre = document.getElementById("genre").value.trim();
     console.log("Genre:", genre);   
