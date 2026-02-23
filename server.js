@@ -7,7 +7,7 @@ app.use(express.static(__dirname));
 app.use(express.urlencoded({ extended: true })); 
 
 
-app.get("/", function(req, res) {
+app.get("/app", function(req, res) {
 
   res.sendFile(__dirname + "/index.html");
 });
