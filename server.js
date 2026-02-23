@@ -19,9 +19,9 @@ app.get("/app", function(req, res) {
 
 
 app.post("/search", function(req, res) {
-const {searchname, genre, rating} = req.body;
-console.log("Received search parameters:", searchname, genre, rating);
-res.json({ message: "Search parameters received", searchname, genre, rating });
+const {searchname, genre, platform} = req.body;
+console.log("Received search parameters:", searchname, genre, platform);
+res.json({ message: "Search parameters received", searchname, genre, platform });
 });
 const server = app.listen(port, hostname, function() {
 

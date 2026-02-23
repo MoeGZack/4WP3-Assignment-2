@@ -3,7 +3,7 @@ document .getElementById("search-form").addEventListener("submit", function(even
 
     const searchname= document.getElementById("search").value.trim();
     console.log("Looking for game:", searchname);
-    const rating = document.getElementById("rating").value.trim();
+    const rating = document.getElementById("Platform").value.trim();
     console.log("Minimum rating:", rating);
     const genre = document.getElementById("genre").value.trim();
     console.log("Genre:", genre);   
@@ -12,7 +12,7 @@ document .getElementById("search-form").addEventListener("submit", function(even
         headers: {
             "Content-Type": "application/json"
         },
-        body: JSON.stringify({ searchname, genre, rating })
+        body: JSON.stringify({ searchname, genre, platform: rating })
     })
         .then(response => response.json())
         .then(data => {
