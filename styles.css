@@ -10,7 +10,10 @@ h1 {
 }
 h2 { margin: 0 0 12px; }
 
+h3 {
+ color: #fafafa;
 
+}
 form {
   display: flex;
   flex-direction: column;
@@ -43,4 +46,15 @@ select {
   background-color: var(--main-color);
   color: #fff;
   cursor: pointer;
+}
+
+#results {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+#results div{
+  text-align: center;
 }
