@@ -8,3 +8,27 @@ h1 {
  color: #fafafa;
   text-align: center;
 }
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+  
+}
+
+label {
+  color: #fafafa;
+  font-size: 1.2em;
+  margin-bottom: 10px;
+}
+
+select {
+  padding: 10px;
+  font-size: 1em;
+  border: none;
+  border-radius: 5px;
+  background-color: var(--main-color);
+  color: #fff;
+  cursor: pointer;
+}

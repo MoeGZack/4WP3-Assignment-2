@@ -1,4 +1,4 @@
-:root<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -11,10 +11,28 @@
 <body>
   <h1>Search your Next Game</h1>
 
-   
-  
+ <form id="search-form">  
+    <label for="search">Search for a game:</label>
+    <input type="text" id="search" name="search" required>
+    <button type="submit">Search</button>
 
+    <select name="Select Genre" id="genre" >
+      <option value="RPG">RPG</option>
+      <option value="Action">Action</option>
+      <option value="Adventure">Adventure</option>
+      <option value="Strategy">Strategy</option>
+      <option value="Sports">Sports</option>
+      <option value="Indie">Indie</option>
+    </select>
 
+    <select name="rating"  id="rating">
+      <option value="1">1 Star</option>
+      <option value="2">2 Stars</option>
+      <option value="3">3 Stars</option>
+      <option value="4">4 Stars</option>
+      <option value="5">5 Stars</option>
+  </form>
+<div id="results"></div>
 
 </body>
 
