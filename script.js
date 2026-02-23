@@ -24,7 +24,7 @@ document .getElementById("search-form").addEventListener("submit", function(even
             const resultsDiv = document.getElementById("results");
             resultsDiv.innerHTML = "";
             console.log("Server response:", data);
-        })
+        
         data.results.forEach(game => {
             
             const container= document.createElement("div");
@@ -37,11 +37,10 @@ document .getElementById("search-form").addEventListener("submit", function(even
             image.width = 200;
 
             container.appendChild(title);
-            container.appendChild(image);
-            
+            if (game.background_image) container.appendChild(image);
             resultsDiv.appendChild(container);
-
-
         });
+
     })
-        
+  
+});
