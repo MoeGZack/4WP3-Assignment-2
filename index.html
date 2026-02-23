@@ -9,14 +9,19 @@
 
 
 <body>
-  <h1>Search your Next Game</h1>
+  
 
- <form id="search-form">  
-    <label for="search">Search for a game:</label>
-    <input type="text" id="search" name="search" required>
+ <form id="search-form"> 
+    <h1>Search your Next Game</h1>
+
+    <label for="search">Enter a game name:</label>
+    <input type="text" id="search" name="search" placeholder="Search for a game...">
+
+    
     <button type="submit">Search</button>
 
-    <select name="Select Genre" id="genre" >
+    <label for="genre">Select Genre:</label>
+    <select name="Select Genre" id="genre" required>
       <option value="RPG">RPG</option>
       <option value="Action">Action</option>
       <option value="Adventure">Adventure</option>
@@ -25,6 +30,7 @@
       <option value="Indie">Indie</option>
     </select>
 
+    <label for="rating">Select Minimum Rating:</label required>
     <select name="rating"  id="rating">
       <option value="1">1 Star</option>
       <option value="2">2 Stars</option>
@@ -33,9 +39,11 @@
       <option value="5">5 Stars</option>
     </select>
   </form>
+
+
 <div id="results"></div>
 
 </body>
 
-
+<script src="/script.js"></script>
 </html>
