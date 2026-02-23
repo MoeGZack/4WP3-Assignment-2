@@ -13,7 +13,10 @@ document .getElementById("search-form").addEventListener("submit", function(even
             "Content-Type": "application/json"
         },
         body: JSON.stringify({ searchname, genre, rating })
-
+    })
+        .then(response => response.json())
+        .then(data => {
+            console.log("Server response:", data);
+        })
     })
         
-});
