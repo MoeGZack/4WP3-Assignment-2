@@ -1,3 +1,5 @@
+const { type } = require("node:os");
+
 document .getElementById("search-form").addEventListener("submit", function(event) {
     event.preventDefault(); 
 
@@ -7,5 +9,13 @@ document .getElementById("search-form").addEventListener("submit", function(even
     console.log("Minimum rating:", rating);
     const genre = document.getElementById("genre").value.trim();
     console.log("Genre:", genre);   
+    fetch("/search", {
+        method: "POST",
+        headers: {
+            "Content-Type": "application/json"
+        },
+        body: JSON.stringify({ searchname, genre, rating })
 
+    })
+        
 });
