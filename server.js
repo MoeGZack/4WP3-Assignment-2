@@ -26,7 +26,7 @@ app.get("/app", function(req, res) {
 //});
 
 app.post("/search", function(req, res) {
-  const { searchname, genre, platform, resultsamount } = req.body;
+  const {genre, platform, resultsamount } = req.body;
   console.log("Received search parameters:", genre, platform, resultsamount);
 
   const rawAPIresponse=  fetch(`${apiUrl}?key=${apiKey}&genres=${encodeURIComponent(genre)}&platforms=${encodeURIComponent(platform)}&page_size=${encodeURIComponent(resultsamount)}`)
